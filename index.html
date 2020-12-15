@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Analytics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="top">
+        <header>
+            <h1 class="logo">INFLUENCER ANALYTICS</h1>
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="images/ham.svg" alt="scroll bar" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li id="exit" class="exit-button hide-desktop"><img src="images/exit.svg" alt="exit button"></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="clients.html">Our Clients</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="title-box">
+        <img src="images/IA_banner.png" alt="IA Logo">
+        <div class="hero-text">
+            <h1 class = "typewriter"> Promoting change in our clients, our members, and our <em>world.</em></h1>
+            </div>
+        </div>
+
+    <div class="IntroductionContainer">
+        <div class="intro">
+            <h1 class = "hvr-grow"> Influencer Analytics offers pro bono marketing consulting</h1>
+            <div id="right">
+            <h1 class = "hvr-grow"> to help our global clients expand their reach and <em>grow</em> their operations</h1>
+            </div>
+        </div>
+    </div>
+    <h1 id='v'>Our Objectives</h1>
+    <div class="values">
+      <h1>Serving Clients</h1>
+      <p>Support our small business clients in their growth</p>
+      <h1>Professional Development</h1>
+      <p>Provide our students with hands-on experiential learning opportunities</p>
+      <h1>Community Impact</h1>
+      <p>Inspire others to devise creative, thoughtful solutions for our world.</p>
+    </div>
+
+    <script>
+
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener("click",function(e) {
+            nav.classList.toggle("hide-mobile");
+            e.preventDefault();
+        });
+
+        exit.addEventListener("click",function(e) {
+            nav.classList.add("hide-mobile");
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
