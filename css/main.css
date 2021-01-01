@@ -206,6 +206,7 @@ nav ul li a{
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-grow:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -264,6 +265,10 @@ nav ul li a{
 }
 .label{
   margin-left: 150px;
+}
+#banner{
+  width: 100%;
+  object-fit: cover;
 }
 
 
