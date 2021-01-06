@@ -3,7 +3,7 @@ body {
     padding: 0px;
     font-family: 'Poppins', sans-serif;
     overflow: auto;
-    background-color: rgb(237, 237, 237);
+    background-color: white;
 }
 
 p, blockquote {
@@ -19,7 +19,7 @@ ul {
 
 .top {
   text-align: center;
-  background-color: #7ccbfc;
+  background-color: #87CDFB;
   position: fixed;
   top:0px;
   left: 0px;
@@ -45,7 +45,7 @@ ul {
 }
 
 .intro{
-    background-color: rgb(236, 236, 236);
+    background-color: white;
 }
 .intro h1{
   font-size: 20px;
@@ -91,6 +91,59 @@ ul {
   50% { border-color: white; }
 }
 
+/*.fade-in {
+  animation: fadeIn ease 7s;
+  -webkit-animation: fadeIn ease 7s;
+  -moz-animation: fadeIn ease 7s;
+  -o-animation: fadeIn ease 7s;
+  -ms-animation: fadeIn ease 7s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+}
+*/
+
 #right{
   display: flex;
   flex-direction: row-reverse;
@@ -117,6 +170,7 @@ header {
 
 .title-box{
     background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, 0.5)), url("../images/nyc.jpg");
+    justify-content: center;
     background-position: center;
     text-align: center;
     margin-bottom: 150px;
@@ -239,7 +293,7 @@ nav ul li a{
   padding: 50px;
 
 }
-.row img{
+.square{
   width: 300px;
   height: 300px;
   object-fit: cover;
@@ -266,11 +320,60 @@ nav ul li a{
 .label{
   margin-left: 150px;
 }
-#banner{
+.banner{
   width: 100%;
   object-fit: cover;
 }
+.person{
+  text-align: center;
+}
+.person .mini{
+  height:70px;
+  width: 70px;
+  object-fit: cover;
+  margin-top: 50px;
+  border-radius: 25px;
+  margin-right: 20px;
+}
+a img {
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
 
+a img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(55, 92, 198);
+  color: white;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+
+.client{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+.desc{
+  font-size: 30px;
+  padding-left: 30px;
+  justify-content: center;
+}
 
 @media only screen and (min-width: 1024px) {
     .show-desktop{
