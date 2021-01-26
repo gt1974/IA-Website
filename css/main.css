@@ -62,7 +62,7 @@ ul {
 
 .hero-text em {
   font-style: normal;
-  color: #7ccbfc;
+  color: #87CDFB;
 
 }
 .typewriter {
@@ -154,7 +154,7 @@ ul {
 }
 #right em{
   font-style: normal;
-  color: #7ccbfc;
+  color: #87CDFB;
 }
 
 header {
@@ -266,12 +266,12 @@ nav ul li a{
   transform: scale(1.1);
 }
 
-#Team{
+.Team{
   padding: 100px;
   text-align: center;
   font-size: 60px;
 }
-#Team em{
+.Team em{
   font-style: normal;
   color: #98d7ff;
 }
@@ -318,11 +318,29 @@ nav ul li a{
   padding-bottom: 20px;
 }
 .label{
+  font-size: 35px;
   margin-left: 150px;
+  padding-top: 50px;
 }
 .banner{
   width: 100%;
   object-fit: cover;
+}
+.blurb{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
+  text-align: center;
+  color: rgb(139, 139, 139);
+  font-size: 20px;
+}
+#core{
+  display: flex;
+  width: 80%;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 .person{
   text-align: center;
@@ -352,29 +370,138 @@ a img:hover {
 footer {
   text-align: center;
   padding: 3px;
-  background-color: rgb(55, 92, 198);
+  background-color: #375cc6;
   color: white;
+  margin-top: 100px;
 }
 footer a{
   color: white;
   text-decoration: none;
 }
 
-.client{
+.desc{
+  font-size: 25px;
+  padding-left: 30px;
+  justify-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.service{
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   width: 80%;
-  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.services{
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  padding: 10px;
+}
+.services p{
+  font-size: 23px;
+}
+.services ul li{
+  font-size: 23px;
+  font-weight: lighter;
+}
+
+.client{
+  display: flex;
+  flex-direction: column;
+  width: 27%;
   margin-left: auto;
   margin-right: auto;
   align-items: center;
 }
-.desc{
-  font-size: 30px;
-  padding-left: 30px;
+.client img{
+  padding-bottom: 20px;
+  display: flex;
+  width: 200px;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+.client h1{
+  text-align: center;
+}
+.client p{
+  font-size: 20px;
+}
+.form{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+label {
+  font-size: 18px;
+  color: #212426;
+
+}
+
+input {
+  width: 50%;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 14px;
+
+}
+.icons{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  text-align: center;
   justify-content: center;
 }
 
+.larger{
+  display: flex;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+button{
+  margin: 10px;
+  width: 150px;
+  height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  align-self: flex-end;
+  background-color: #87CDFB;
+  border: 5px solid #87CDFB;
+  border-radius: 10px;
+}
+.error_message {
+  padding-left: 5px;
+  border-left: 1px #d73232 solid;
+  font-size: 14px;
+  color: #d73232;
+}
+#msg{
+  height: 100px;
+}
+
+.hidden {
+  display: none !important;
+}
 @media only screen and (min-width: 1024px) {
     .show-desktop{
         display: block;
@@ -404,7 +531,7 @@ footer a{
 
     nav ul li a {
         color: white;
-        background-color: #7ccbfc;
+        background-color: #87CDFB;
         padding-top: 12px;
         -webkit-transform: perspective(1px) translateZ(0);
         transform: perspective(1px) translateZ(0);

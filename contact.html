@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencer Analytics</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="top">
+      <header>
+          <h1 class="logo">INFLUENCER ANALYTICS</h1>
+          <nav>
+              <a href="#" class="hide-desktop">
+                  <img src="images/ham.svg" alt="scroll bar" class="menu" id="menu">
+              </a>
+
+              <ul class="show-desktop hide-mobile" id="nav">
+                  <li id="exit" class="exit-button hide-desktop"><img src="images/exit.svg" alt="exit button"></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="team.html">Our Team</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="projects.html">Our Projects</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </nav>
+      </header>
+  </div>
+  <h1 class="Team">Contact Us</h1>
+  <h3 class="blurb">Please follow us on Social Media for team updates and more information!</h3>
+  <div class="icons">
+    <a href="https://www.instagram.com/influenceranalytics/" target="_blank">
+  <img class='larger' src="images/insta.png" alt="instagram">
+  </a>
+  <a href="https://www.linkedin.com/company/influencer-analytics/?viewAsMember=true" target="_blank">
+  <img class='larger' src="images/linked.png" alt="linkedin">
+  </a>
+  </div>
+  <h3 class="blurb">For client and team inquiries, please complete the form below. You may
+    also directly contact teaminfluenceranalytics@gmail.com. We look forward
+    to hearing from you and will respond as soon as possible.</h3>
+  <div class="form">
+  <form id="order" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2020fa/submit.php" novalidate>
+
+        <label for="fname">First Name</label>
+        <div class="error_message hidden" id="fname_error">
+          Please provide a name.
+        </div>
+        <input type="text" id="fname" name="name" required/>
+        <label for="lname">Last Name</label>
+        <div class="error_message hidden" id="lname_error">
+          Please provide a name.
+        </div>
+        <input type="text" id="lname" name="name" required/>
+
+        <label for="email">Email</label>
+        <div class="error_message hidden" id="email_error">
+          Please provide a valid email address.
+        </div>
+        <input type="email" id="email" name="email" required/>
+
+        <label for="subject">Subject</label>
+        <div class="error_message hidden" id="subject_error">
+          Please provide a valid subject.
+        </div>
+        <input type="text" id="subject" name="subject" required/>
+
+        <label for="msg">Message</label>
+        <div class="error_message hidden" id="msg_error">
+          Please provide a valid message.
+        </div>
+        <input type="text" id="msg" name="msg" required/>
+
+
+
+
+        <button type="submit">Submit</button>
+      </form>
+        </div>
+        <footer>
+      <p>Influencer Analytics</p>
+      <p><a href="mailto:team.influenceranalytics@gmail.com">team.influenceranalytics@gmail.com</a></p>
+      </footer>
+  </body>
