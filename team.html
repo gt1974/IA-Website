@@ -6,6 +6,8 @@
     <title>Influencer Analytics</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="scripts/jquery-3.5.1.js" type="text/javascript"></script>
+    <script src="scripts/modal.js" type="text/javascript" async></script>
 </head>
 <body>
   <div class="top">
@@ -34,12 +36,90 @@
     the United States. Together, we develop innovative solutions grounded in
     marketing principles and data analytics.
 </h3>
+<div id="Michelle-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/michelle.jpg" alt="Michelle">
+    <p>Michelle is a sophomore at Cornell University’s SC Johnson College of Business studying Hotel Administration with concentrations in Finance and Accounting. Michelle co-founded IA last summer due to her passion for bettering the global community. On campus, Michelle is the Chief Research Officer of Smart Woman Securities and an Asset and Wealth Management Analyst for Cornell’s Society of Women in Business. As an avid reader and writer, Michelle is also a business writing consultant for her school’s Communication Center. In her free time, Michelle enjoys binging The Office, cooking squid ink pasta, and lumbering after her four baby turtles.</p>
+  </div>
+
+</div>
+
+<div id="Yong-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/young.jpg" alt="Young">
+    <p>Yong Hao is a sophomore at New York University studying Economics and minoring in Business Studies. Driven by his passion to challenge social development issues, Yong co-founded Influencer Analytics last Summer with the goal to help empower communities in need. On-campus, Yong is a Business Analyst for Consult Your Community and part of the E-Board for NYU’s Chinese Finance Club. Yong is also a fellow at the United Nations and plays an active role as an intern in numerous startups and non-profit organizations. In his free time, Yong enjoys reading novels, exploring new recipes, and crafting the perfect ballroom dancing choreography. </p>
+  </div>
+
+</div>
+
+<div id="Kevin-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/kevin.jpg" alt="Kevin Qiu">
+    <p>Kevin is a sophomore at Carnegie Mellon University with a double major in Business Administration and Computer Science. Wanting to help small businesses during a time of turbulence, he joined the IA team in hopes of aiding small businesses and their communities. On campus, Kevin was a member of the Morewood Gardens Committee, responsible for budgeting and creating events for the community. Outside of school, he is also a social media intern for SparkYourResume. In his free time, Kevin enjoys watching reality shows, playing chess and trying different foods.
+</p>
+  </div>
+
+</div>
+
+<div id="Amy-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/amy.jpg" alt="Amy Cao">
+    <p>Amy is a sophomore at Cornell University, majoring in Hotel Administration. She joined the AI team last summer with the hope of learning more about marketing and getting some client facing experiences. On campus, Amy is a member of Cornell Financial Analysts, a teaching assistant for finance, and a brother of Phi Sigma Pi. In her free time, she enjoys baking pastry goods, exploring new foods, and binge watching shows. </p>
+  </div>
+
+</div>
+
+<div id="Yuxuan-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/yuxuan.jpg" alt="Yuxuan Zou">
+    <p>Yuxuan is a sophomore studying computer science in Case Western Reserve University. Wanting to experience collaboration with real clients and self improvement, he joins IA in order to develop his career and knowledge. Outside of school, he was an intern at Spark Your Resume. In school, he participated in clubs such as robotics and red cross. During his free time, he enjoys spending time with his friends and family and watching reality TV shows.
+</p>
+  </div>
+
+</div>
+<div id="Michael-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/michael.jpg" alt="Michael Yu">
+    <p>Michael is a sophomore at New York University pursuing a Data Science major. Initially only looking for something to do over the summer, Michael joined Influencer Analytics to help with marketing and content creation. However, as time went on, he found a way to incorporate his data collection and analysis skills to help clients make data-driven decisions about their goals and brands. On campus, Michael is a member of the NYU Latin and Ballroom Dance Team, and a brother of Psi Upsilon. Outside of classes, Michael was also an analytics intern at Spark Your Resume. On his off time, Michael enjoys baking and practicing Latin dance choreography.</p>
+  </div>
+
+</div>
+
+<div id="Gordon-Modal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <img class='square' src="images/gordon.jpg" alt="Gordon Tran">
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
   <h2 class='label'>Managers</h2>
   <div class="row">
     <!-- Michelle-->
     <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/michelle.jpg" alt="Michelle">
+      <img id = 'Michelle' class='square' src="images/michelle.jpg" alt="Michelle">
       <div class="card-body">
         <h4 class="card-title">Michelle Yang</h4>
         <div class="card-text">Cornell 2023</div>
@@ -56,7 +136,7 @@
     <!-- Young-->
         <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/young.jpg" alt="Young">
+      <img id = 'Yong' class='square' src="images/young.jpg" alt="Young">
       <div class="card-body">
         <h4 class="card-title">Yong Hao Liu</h4>
         <div class="card-text">NYU 2023</div>
@@ -76,7 +156,7 @@
     <!-- Kevin-->
         <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/kevin.jpg" alt="Kevin Qiu">
+      <img id='Kevin' class='square' src="images/kevin.jpg" alt="Kevin Qiu">
       <div class="card-body">
         <h4 class="card-title">Kevin Qiu</h4>
         <div class="card-text">Carnegie Mellon 2023</div>
@@ -92,7 +172,7 @@
     <!-- Amy-->
         <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/amy.jpg" alt="Amy Cao">
+      <img id='Amy' class='square' src="images/amy.jpg" alt="Amy Cao">
       <div class="card-body">
         <h4 class="card-title">Amy Cao</h4>
         <div class="card-text">Cornell 2023</div>
@@ -112,7 +192,7 @@
     <!-- Yuxuan-->
         <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/yuxuan.jpg" alt="Yuxuan Zou">
+      <img id= 'Yuxuan' class='square' src="images/yuxuan.jpg" alt="Yuxuan Zou">
       <div class="card-body">
         <h4 class="card-title">Yuxuan Zou</h4>
         <div class="card-text">Case Western 2023</div>
@@ -128,7 +208,7 @@
     <!-- Michael-->
         <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/michael.jpg" alt="Michael Yu">
+      <img id= 'Michael' class='square' src="images/michael.jpg" alt="Michael Yu">
       <div class="card-body">
         <h4 class="card-title">Michael Yu</h4>
         <div class="card-text">NYU 2023</div>
@@ -147,7 +227,7 @@
         <!-- Gordon-->
     <div class='person'>
     <div class="shadow">
-      <img class='square' src="images/gordon.jpg" alt="Young">
+      <img id='Gordon' class='square' src="images/gordon.jpg" alt="Young">
       <div class="card-body">
         <h4 class="card-title">Gordon Tran</h4>
         <div class="card-text">Cornell 2023</div>
