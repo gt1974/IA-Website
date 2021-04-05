@@ -362,6 +362,7 @@ nav ul li a{
   padding: 50px;
 
 }
+
 .square{
   width: 300px;
   height: 300px;
@@ -607,6 +608,39 @@ button{
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-row{
+  display: flex;
+  flex-direction: row;
+}
+.modal-row p{
+  font-size: 17px;
+  padding: 50px;
+  padding-top: 0;
+}
+.msquare{
+  width: 400px;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+  align-items: center;
+  padding: 50px;
+  padding-top: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.modal-titles{
+  display: flex;
+}
+.modal-label{
+  padding-left: 45px;
+  margin: 0;
+  font-weight: lighter;
+}
+.big{
+  font-weight: bolder;
+  padding-right: 25%;
+}
 /* The Close Button */
 .close {
   color: #aaa;

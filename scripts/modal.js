@@ -1,17 +1,16 @@
 // Get the modal
 var michelle = document.getElementById("Michelle-Modal");
-
 // Get the button that opens the modal
 var michelle_btn = document.getElementById("Michelle");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-// var yongspan = document.getElementById("yclose")[0];
-// var amyspan = document.getElementById("aclose")[0];
-// var kevinspan = document.getElementById("kclose")[0];
-// var michaelspan = document.getElementById("miclose")[0];
-// var yuspan = document.getElementById("yuclose")[0];
-// var gordonspan = document.getElementById("gclose")[0];
+var yongspan = document.getElementsByClassName("yclose")[0];
+var amyspan = document.getElementsByClassName("aclose")[0];
+var kevinspan = document.getElementsByClassName("kclose")[0];
+var michaelspan = document.getElementsByClassName("miclose")[0];
+var yuspan = document.getElementsByClassName("yuclose")[0];
+var gordonspan = document.getElementsByClassName("gclose")[0];
 // When the user clicks on the button, open the modal
 
 michelle_btn.onclick = function() {
@@ -20,33 +19,52 @@ michelle_btn.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  if (event.target == michelle) {
+    console.log(span)
+  if (event.target == span) {
     michelle.style.display = "none";
   }
-  if (event.target == yong) {
+}
+yongspan.onclick = function() {
+    console.log(yongspan)
+  if (event.target == yongspan) {
     yong.style.display = "none";
   }
-  if (event.target == kevin) {
+}
+kevinspan.onclick = function() {
+    console.log(kevinspan)
+  if (event.target == kevinspan) {
     kevin.style.display = "none";
   }
-  if (event.target == amy) {
+}
+amyspan.onclick = function() {
+    console.log(amyspan)
+  if (event.target == amyspan) {
     amy.style.display = "none";
   }
-  if (event.target == yu) {
+}
+yuspan.onclick = function() {
+    console.log(yuspan)
+  if (event.target == yuspan) {
     yu.style.display = "none";
   }
-  if (event.target == michael) {
+}
+michaelspan.onclick = function() {
+    console.log(michaelspan)
+  if (event.target == michaelspan) {
     michael.style.display = "none";
   }
-  if (event.target == gordon) {
+}
+gordonspan.onclick = function() {
+    console.log(gordonspan)
+  if (event.target == gordonspan) {
     gordon.style.display = "none";
   }
 }
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == michelle) {
     michelle.style.display = "none";
+    console.log('hi')
   }
   if (event.target == yong) {
     yong.style.display = "none";
